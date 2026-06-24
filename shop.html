@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waschkarte aufladen – UNICLEAR</title>
+  <meta name="description" content="Lade deine UNICLEAR-Waschkarte bequem online auf und bezahle an jeder SB-Box bargeldlos.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="index.html" class="logo"><span class="mark"></span>UNI<b>CLEAR</b></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="leistungen.html">Leistungen</a></li>
+          <li><a href="funktion.html">Funktionsweise</a></li>
+          <li><a href="standorte.html">Standorte</a></li>
+          <li><a href="shop.html" class="active">Waschkarte</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="shop.html" class="btn btn-primary">Karte laden</a>
+        <button class="nav-toggle" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="bubble-field" data-count="12"></div>
+    <div class="wrap">
+      <div class="breadcrumb reveal"><a href="index.html">Start</a> / Waschkarte</div>
+      <span class="eyebrow reveal">Bargeldlos waschen</span>
+      <h1 class="reveal" data-delay="1">Waschkarte aufladen</h1>
+      <p class="lead reveal" data-delay="2">Lade Guthaben auf deine UNICLEAR-Karte und bezahle an jeder Box bargeldlos. <b>Demo:</b> Die Zahlung ist noch nicht angebunden – das Aufladen unten ist eine Vorschau.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="split" style="align-items:start;">
+        <!-- Visuelle Karte -->
+        <div class="reveal">
+          <div class="wash-card">
+            <div class="wc-top">
+              <span class="chip"></span>
+              <strong style="font-family:var(--font-display); letter-spacing:-0.03em;">UNICLEAR</strong>
+            </div>
+            <div class="wc-balance">
+              <div class="lbl">Guthaben</div>
+              <div class="amt" data-balance="0.00">CHF 0.00</div>
+            </div>
+            <div class="wc-num">•••• •••• •••• 0427</div>
+          </div>
+          <ul class="feat-list" style="margin-top:1.6rem;">
+            <li>An allen SB-Boxen einsetzbar</li>
+            <li>Guthaben verfällt nicht*</li>
+            <li>Jederzeit nachladbar</li>
+          </ul>
+        </div>
+
+        <!-- Aufladen -->
+        <div class="topup reveal" data-delay="1">
+          <h3>Guthaben wählen</h3>
+          <div class="amount-grid">
+            <div class="amount-opt" data-value="20">CHF 20<small>+ CHF 0</small></div>
+            <div class="amount-opt" data-value="50">CHF 50<small>+ CHF 5 gratis</small></div>
+            <div class="amount-opt" data-value="100">CHF 100<small>+ CHF 15 gratis</small></div>
+          </div>
+          <form id="topup-form">
+            <div class="field">
+              <label for="card-id">Kartennummer</label>
+              <input type="text" id="card-id" placeholder="z. B. 0427-1234-5678" autocomplete="off">
+            </div>
+            <div class="field">
+              <label for="email">E-Mail für die Quittung</label>
+              <input type="email" id="email" placeholder="du@beispiel.ch">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Aufladen (Demo) <span class="arrow">→</span></button>
+            <p id="topup-note" style="display:none; margin-top:1rem; color:var(--green-deep); font-weight:600;"></p>
+          </form>
+          <p style="font-size:0.8rem; margin-top:1rem;">* Bedingungen sind Platzhalter. Eine echte Zahlungsanbindung (z. B. Stripe/TWINT) bauen wir später ein.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Noch keine Karte? -->
+  <section style="background: var(--cream-2);">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="eyebrow green">Neu hier?</span><h2>So bekommst du deine Karte</h2></div>
+      <div class="grid grid-3">
+        <div class="card reveal"><div class="icon">①</div><h3>Vor Ort holen</h3><p>Karte am Automaten an der Waschanlage beziehen – Platzhaltertext.</p></div>
+        <div class="card alt reveal" data-delay="1"><div class="icon">②</div><h3>Online aufladen</h3><p>Kartennummer eingeben und Guthaben buchen.</p></div>
+        <div class="card reveal" data-delay="2"><div class="icon">③</div><h3>Losfahren</h3><p>An jeder Box bargeldlos bezahlen und waschen.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div><a href="index.html" class="logo"><span class="mark"></span>UNI<b style="color:var(--orange)">CLEAR</b></a><p>Moderne SB-Waschanlage mit aufladbarer Waschkarte und reinem Osmose-Wasser.</p></div>
+        <div class="footer-col"><h4>Seiten</h4><ul><li><a href="leistungen.html">Leistungen</a></li><li><a href="funktion.html">Funktionsweise</a></li><li><a href="standorte.html">Standorte</a></li><li><a href="shop.html">Waschkarte</a></li><li><a href="ueber-uns.html">Über uns</a></li></ul></div>
+        <div class="footer-col"><h4>Kontakt</h4><ul><li><a href="kontakt.html">Standort</a></li><li><a href="kontakt.html">Öffnungszeiten</a></li><li><a href="mailto:info@uniclear.example">info@uniclear.example</a></li></ul></div>
+        <div class="footer-col"><h4>Rechtliches</h4><ul><li><a href="#">Impressum</a></li><li><a href="#">Datenschutz</a></li><li><a href="#">AGB</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 UNICLEAR. Alle Rechte vorbehalten.</span><span>Zahlung ist noch nicht angebunden (Demo).</span></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
